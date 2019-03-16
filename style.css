@@ -1,0 +1,183 @@
+#dShow{
+    position: absolute;
+    right: 150px;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    height: 20px;
+    width: 50px;
+}
+
+@keyframes move{
+    from{transform: translatey(-100px)}
+    to{transform: translatey(20px)}
+    }
+
+.ddd{
+    width: 200px;
+    height: 150px;
+    background: black;
+}
+
+
+
+#dgoal{
+    
+    margin-right: 5px;
+}
+
+.finish{
+    color: violet;
+    font-size: 10px;
+    display: block;
+}
+
+body {
+    text-align: center;
+    height: 730px; 
+   
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
+
+.btn{
+    border-radius: 10px;
+    border: 0ch;
+    padding: 2px 15px; 
+    
+}
+.btn:hover{
+    transition: 1s;
+    background-color: coral;
+}
+
+
+
+
+.lis{
+    display: block;
+    margin: 10px;
+    margin-left: 230px;
+    width:  800px;
+    opacity: 0.5;
+    box-sizing: content-box;
+    line-height: 50px;
+    transition: 1s;
+    border-radius: 20px;
+    background-color: cadetblue;
+}
+
+.lis:hover{
+    line-height: 70px;
+    font-size: 2em;
+    background-color: tan;
+    opacity: 0.75;
+    
+}
+
+
+
+
+
+#goal{
+    opacity: 0.5;
+    color: black;
+    background-color: azure;
+    border-radius: 10px;
+    width: 700px;
+    margin-left: 320px;
+}
+
+.del{
+    border-radius: 10px;
+    border: 0ch;
+    background-color: brown;
+    display: none;
+    margin-left: 40px;
+    transition: 100s;
+}
+
+
+.lis:hover .del{
+    display: inline-block;
+}
+
+
+#txt{
+    width: 300px;
+    height: 60px;
+    border-radius: 6px;
+    border: 0ch;
+    box-shadow: 5px 5px 5px #999;
+}
+
+
+
+#form{
+    margin: 5px;
+}
+
+
+.ul2{
+    display: none;
+    font-size: 0%;
+    
+    padding: 2px;
+    
+}
+
+.lis:hover .ul2 li{
+    margin: 2px;
+    border-radius: 20px;
+    background-color: rgba(245, 245, 57, 0.938);
+}
+
+.lis:hover .ul2 {
+    line-height: 25px;
+    display: block;
+    list-style: none;
+    font-size: 0.7em; 
+}
+
+.del2{
+    border-radius: 10px;
+    border: 0ch;
+    background-color: brown;
+    display: inline;
+    margin-left: 40px;
+    transition: 100s;
+}
+
+.inp2{
+    border-radius: 3px;
+    border: 0ch;
+    margin: 5px;
+    display: none;
+}
+.lis:hover .inp2{
+    text-align: center;
+    display: inline-flex;
+}
+
+.sub2{
+    border-radius: 5px;
+    border: 0ch;
+    display: none;
+}
+.lis:hover .sub2{
+    text-align: center;
+    display: inline-flex;
+}
+
+
+#picLinks{
+    border: 0ch;
+    border-radius: 2px;
+}

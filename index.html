@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome To RealTime</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Real Time</h1>
+
+    <span id="tv"></span>
+    <div id="dShow">
+    </div> 
+<div id="dgoal">
+    <a href="#" onclick="goal()">Our Goal</a>
+    <h3 id="goal"></h3>
+</div>
+
+    <div id=dPic> <!–– and the comment closes with ––>
+
+        <input type="text" id="picLinks">
+        <input type="submit" value="Add Photo" class="btn" onclick="addPhotos()">
+    
+        <input type="text" placeholder="estimated time" id="es">    
+        <input type="submit" value="runtime" class="btn" id="run" >
+
+
+<form id="form">
+    <input  type="text" id="txt" placeholder="   What's on your mind!">
+    <input type="submit" value="Post" class="btn" id="sub">
+</form>
+    
+
+    <div>
+        <ul id="ul"></ul>
+    </div>
+
+    
+    
+</div> <!–– div pic ––>
+</body>
+<script src="main.js"></script>
+</html>
