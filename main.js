@@ -72,18 +72,6 @@ sub.addEventListener("click", function(e){
     form.reset()
 })
 
-/*
-ul.addEventListener("mouseover", function(e){
- // let  li = document.getElementsByClassName("lis") 
-  
-  if (e.target.className == "lis" && e.target.firstElementChild == null){
-    e.target.appendChild(del)
-  }  
-})*/
-
-//edit post
-
-
 
 
 
@@ -146,12 +134,21 @@ let dShow = document.getElementById("dShow")
 let pic = document.querySelector("img")
 
 let storedPics = []
+
+
 function addPhotos(){ 
     let picLinks = document.getElementById("picLinks").value 
-    storedPics.push(picLinks+".jpg")  
-    dShow.insertAdjacentHTML("afterbegin","<img"+" " +"src="+picLinks+".jpg"+ " " +"width="+"200" +">")
-    console.log(storedPics)  
-}
+        storedPics.push(picLinks+".jpg")
+        dShow.insertAdjacentHTML("afterbegin","<img"+" " +"src="+picLinks+".jpg"+ " " +"width="+"200" +">")
+            console.log(storedPics) 
+        if (dShow.children.length >5){
+            dShow.children[5].remove()
+        }
+           
+       }
+       
+      
+    
 
 //setting background photo
 
@@ -165,53 +162,3 @@ dShow.addEventListener('click', function(e){
 })
 
 
-//add comment
-/*
-setInterval(function lCom(){
-    if (document.querySelector("#lis") == null){
-        console.log("not yet")
-    }else{
-        let listComment = document.querySelector(".lis")
-        console.log(listComment)
-    }
-},10)
-*/
-
-
-
-/*
-changing background photo
-let x =0 
-function changeIt(){    
-        setInterval(function(){ 
-        if (x < storedPics.length){
-            pic.setAttribute("src", storedPics[x])
-            x++ 
-            console.log(x)
-        } else if (x>storedPics.length){
-            x = 0;
-            pic.setAttribute("src", storedPics[x])
-            x++
-        }         
-        }, 6000)  
-}
-*/
-
-/*
-//create your weather
-//slide show imgs, on click push to array
-
-
-let slid = document.getElementById("slid")
-let play = document.getElementById("play")
-
-play.addEventListener('click', function(){
-    let req = new XMLHttpRequest();
-    req.open('GET', 'https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg')
-    req.onload = function(){
-        let pic = req.responseText
-        console.log(pic)
-    }
-    req.send() 
-})
-*/
