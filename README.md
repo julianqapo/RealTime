@@ -1,8 +1,6 @@
 # RealTime
 
-we all have issues with controlling our time
-especially when it comes to social media
-so i had an idea about creating a website to solve this problem
+we all have issues with controlling our time, especially when it comes to social media. so i had an idea about creating a website to solve this problem
 
 
 p.s :
